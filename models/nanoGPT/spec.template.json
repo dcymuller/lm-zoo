@@ -1,0 +1,34 @@
+{
+    "name": "nanoGPT",
+    "ref_url": "https://me.com/my_lm",
+
+    "image": {
+        "maintainer": "dmuller@berkeley.edu",
+        "version": "<image.sha1>",
+        "checksum": "<image.files_sha1>",
+        "datetime": "<image.datetime>",
+        "gpu": {
+            "required": true,
+            "supported": true
+        },
+        "supported_features": {
+            "tokenize": true,
+            "unkify": true,
+            "get_surprisals": true,
+            "get_predictions": false,
+            "mount_checkpoint": false
+        }
+    },
+
+    "vocabulary": {
+        "unk_types": ["<unk>"],
+        "prefix_types": [],
+        "suffix_types": ["<eos>"],
+        "special_types": []
+    },
+
+    "tokenizer": {
+        "type": "word",
+        "cased": true
+    }
+}
